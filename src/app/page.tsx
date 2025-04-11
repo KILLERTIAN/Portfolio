@@ -5,7 +5,6 @@ import { ProjectsSection } from "@/components/projects-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
-import { ScreenLoader } from "@/components/screen-loader";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Github, Mail, FileText } from "lucide-react";
@@ -13,7 +12,6 @@ import { ArrowRight, Github, Mail, FileText } from "lucide-react";
 export default function Home() {
   return (
     <>
-      <ScreenLoader />
       <main className="flex flex-col scroll-smooth">
         <Navbar />
         <div className="flex-1">
