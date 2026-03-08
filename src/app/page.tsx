@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, FileText } from "lucide-react";
-import { SiLeetcode, SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
+import { SiLeetcode, SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Home() {
   return (

@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio-website",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2024-11-18",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "routes": [
+    {
+      "pattern": "om.garcade.in",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.om.garcade.in",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "NODE_ENV": "production"
+  }
+}

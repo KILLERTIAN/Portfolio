@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:worker": "npx opennextjs-cloudflare build",
+    "deploy:worker": "npm run build:worker && npx opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.4",
@@ -30,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@opennextjs/cloudflare": "^1.17.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -37,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.71.0"
   }
 }

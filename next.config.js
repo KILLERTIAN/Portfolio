@@ -34,6 +34,7 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
+    unoptimized: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
